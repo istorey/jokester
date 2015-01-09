@@ -10,4 +10,5 @@ describe Comment do
 	end
 
 	it { should validate_presence_of(:body) }
+	it { should validate_numericality_of(:joke_id) }
 end
