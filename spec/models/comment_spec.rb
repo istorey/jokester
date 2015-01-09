@@ -11,5 +11,6 @@ describe Comment do
 
 	it { should validate_presence_of(:body) }
 	it { should validate_numericality_of(:joke_id) }
+	it { should validate_numericality_of(:user_id) }
 	it { should belong_to(:joke) }
 end
