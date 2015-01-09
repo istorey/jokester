@@ -4,7 +4,7 @@ class JokesController < ApplicationController
 	end
 
 	def show
-		@joke = Joke.find(params[:joke_id])
+		@joke = Joke.find(params[:id])
 	end
 
 	def new
