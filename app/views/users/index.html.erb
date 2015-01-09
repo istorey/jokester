@@ -1,3 +1,6 @@
 Welcome,
 
 <%= current_user.user_name %>
+<% current_user.friends.each do |friend| %>
+<%= friend.user_name %>
+<% end %>
