@@ -12,7 +12,14 @@ class JokesController < ApplicationController
 	end
 
 	def create
-		@joke = Joke.create(joke_params)
+		@joke = current_user.jokes.build(joke_params)
+		@joke = Joke.new(joke_params, :user_id)
+
+		if @joke.save
+			redirect_to @joke
+		else
+			render 'new'
+		end
 	end
 
 	def update
