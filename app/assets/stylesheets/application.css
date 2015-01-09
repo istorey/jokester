@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+html{
+	background-color: #ddd;
+	background-image: url(http://cdn4.pitchfork.com/features/7926/f62df0c9.jpg);
+	background-size: cover;
+	font-size: 28px;
+	font-family: Verdana;
+}
