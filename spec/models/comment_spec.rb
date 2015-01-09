@@ -1,0 +1,13 @@
+require 'rails_helper'
+require_relative "../../app/models/comment.rb"
+
+describe Comment do
+	describe "::new" do
+		it "can be instantiated" do
+			c = Comment.new
+			expect(c.class).to eq(Comment)
+		end
+	end
+
+	it { should validate_presence_of(:body) }
+end
